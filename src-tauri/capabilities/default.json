@@ -1,0 +1,13 @@
+{
+  "identifier": "default",
+  "description": "Uprawnienia okna KKF Studio",
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "core:default",
+    "dialog:default",
+    "fs:default",
+	"fs:allow-write-file"
+  ]
+}

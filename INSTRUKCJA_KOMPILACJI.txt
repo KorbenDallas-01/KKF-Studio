@@ -1,0 +1,9 @@
+KKF STUDIO - WINDOWS BUILD
+
+1. Copy build.ps1 and START_KOMPILACJI.cmd into the KKFStudio directory (next to package.json).
+2. Install Node.js, Rust (MSVC toolchain), .NET 8 SDK and Visual Studio C++ Build Tools.
+3. Run START_KOMPILACJI.cmd.
+4. If successful, find the installer in src-tauri\target\release\bundle\nsis.
+
+Scripts contain ASCII-only characters to prevent Windows PowerShell 5.1 encoding errors.
+This package is NOT a compiled application.
