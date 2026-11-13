@@ -84,4 +84,4 @@ Write-Host "GOTOWE!" -ForegroundColor Green
 Write-Host "Plik: $zipPath"
 Write-Host "Rozmiar: $sizeMB MB"
 Write-Host "Spakowano plikow: $($files.Count)"
-Test-Path C:\Users\IBE\Desktop\FiszkaStudio_KOD_ZRODLOWY.zip
+Test-Path C:\Users\IBE\Desktop\KKF_KOD_ZRODLOWY.zip
