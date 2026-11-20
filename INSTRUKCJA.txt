@@ -1,0 +1,9 @@
+KKF STUDIO — kompilacja Windows x64
+
+1. Zainstaluj Node.js LTS, Rust (MSVC), .NET SDK 8 oraz Visual Studio Build Tools z komponentem C++.
+2. Rozpakuj KKFStudio.zip.
+3. Skopiuj START_KOMPILACJI.cmd i build.ps1 do folderu KKFStudio (obok package.json).
+4. Uruchom START_KOMPILACJI.cmd.
+5. Wynik: src-tauri\target\release\bundle\nsis\*.exe
+
+Uwaga: skrypt nie zastępuje testów działania aplikacji. Do instalacji na innych komputerach wymagany może być Microsoft Edge WebView2 Runtime i Microsoft Word. Przed wdrożeniem przetestuj generowanie dokumentów, zasoby oraz obsługę polskich znaków.

@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+dist/
+.vite/
+
+# Rust / Tauri
+src-tauri/target/
+target/
+*.exe
+*.msi
+*.msix
+*.msixbundle
+
+# Pliki tymczasowe
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Ustawienia lokalne
+.vscode/
+.idea/
+
+# Dane prywatne
+.env
+.env.*
+!.env.example
+
+# Certyfikaty i klucze prywatne
+*.pfx
+*.p12
+*.pem
+*.key

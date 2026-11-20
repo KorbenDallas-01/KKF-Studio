@@ -1,0 +1,52 @@
+KKF STUDIO - ROZSZERZENIE O 44 SZABLONY
+====================================
+
+Zmieniony kod źródłowy bazuje na przekazanym archiwum KKF_KOD_ZRODLOWY.zip.
+Szablony pochodzą z przekazanego szablonyKKF.zip.
+
+NOWY PRZEPŁYW
+1. Kliknij „Nowa kkf” w menu.
+2. Wybierz jeden z dwóch rodzajów KKF: do faktur lub do rachunków.
+3. Wybierz jeden z 22 szablonów dla konkretnego projektu.
+4. W ekranie DOKUMENT / KKF wczytaj fakturę KSeF FA(3) w XML.
+5. Sprawdź dane z XML oraz wpisz „Zadanie” i „Pozycja budżetowa” (obowiązkowe).
+6. Opcjonalnie wpisz „Nr wniosku zakupowego” i „Nr umowy”.
+7. Kliknij „Generuj DOCX” albo „Zapisz jako…”.
+
+DANE W SZABLONACH
+- Pozycje Nr Faktury / Nr rachunku, Z dnia, Wystawiona przez,
+  Nazwa towaru/usługi, Kwota brutto dokumentu oraz cztery nowe pola
+  trafiają do właściwych komórek wybranego dokumentu.
+- Formularze z gotowymi przykładami, wartościami „Nie dotyczy”
+  lub listami pomocniczymi w tych komórkach otrzymują wpisane w aplikacji wartości.
+- Opcjonalne pola pozostawione puste zostają puste w dokumencie.
+- Pozostała zawartość DOCX (w tym nagłówki projektów, dane finansowania,
+  podpisy i elementy graficzne) zostaje zachowana.
+
+KOMPILACJA W WINDOWS 11
+Wypakuj CAŁE archiwum do jednego folderu, np. C:\KKFStudio.
+Zainstaluj Node.js, Rust/MSVC, .NET SDK 8 i Visual Studio C++ Build Tools
+(tak jak w dotychczasowej wersji). Następnie:
+  1. Otwórz PowerShell w folderze z package.json.
+  2. Uruchom: .\START_KOMPILACJI.cmd
+     lub: powershell -ExecutionPolicy Bypass -File .\build.ps1
+  3. Instalator będzie w: src-tauri\target\release\bundle\nsis\
+
+UWAGA: Nie jest to gotowy instalator .exe. To źródła z załączonymi
+44 szablonami. Kompilacja i test Windows/.NET muszą zostać wykonane
+na komputerze Windows; w środowisku przygotowania archiwum nie było
+.NET SDK i działającego kompletu pakietów npm.
+
+PLIKI ZMIENIONE:
+  src/App.tsx
+  src/style.css
+  src/kkfTemplates.ts (nowy)
+  src-tauri/src/lib.rs
+  src-tauri/tauri.conf.json
+  helper/Program.cs
+  assets/templates/faktury/*.docx (22 sztuki)
+  assets/templates/rachunki/*.docx (22 sztuki)
+  README.md
+
+Istniejące funkcje profilu użytkownika, protokołu przekazania,
+folderu domyślnego, historii i automatycznego otwierania DOCX pozostawiono.

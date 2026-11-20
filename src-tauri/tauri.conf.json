@@ -1,0 +1,87 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "KKF Studio",
+  "version": "0.2.0",
+  "identifier": "pl.kkfstudio.app",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "KKF Studio",
+        "width": 760,
+        "height": 850,
+        "minWidth": 690,
+        "minHeight": 650,
+        "backgroundColor": "#101116"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "nsis"
+    ],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ],
+    "resources": {
+      "../helper/publish/*": "helper/",
+      "../assets/KKF.docx": "assets/KKF.docx",
+      "../assets/templates/faktury/KKF do faktury projekt FERS 5PRK.docx": "assets/templates/faktury/KKF do faktury projekt FERS 5PRK.docx",
+      "../assets/templates/faktury/KKF do faktury projekt FERS BM.docx": "assets/templates/faktury/KKF do faktury projekt FERS BM.docx",
+      "../assets/templates/faktury/KKF do faktury projekt FERS CWD.docx": "assets/templates/faktury/KKF do faktury projekt FERS CWD.docx",
+      "../assets/templates/faktury/KKF do faktury projekt FERS E-dostęp.docx": "assets/templates/faktury/KKF do faktury projekt FERS E-dostęp.docx",
+      "../assets/templates/faktury/KKF do faktury projekt FERS EDUW.docx": "assets/templates/faktury/KKF do faktury projekt FERS EDUW.docx",
+      "../assets/templates/faktury/KKF do faktury projekt FERS LOSY3.docx": "assets/templates/faktury/KKF do faktury projekt FERS LOSY3.docx",
+      "../assets/templates/faktury/KKF do faktury projekt FERS Mikro.docx": "assets/templates/faktury/KKF do faktury projekt FERS Mikro.docx",
+      "../assets/templates/faktury/KKF do faktury projekt FERS Nauczyciele2.docx": "assets/templates/faktury/KKF do faktury projekt FERS Nauczyciele2.docx",
+      "../assets/templates/faktury/KKF do faktury projekt FERS P4S.docx": "assets/templates/faktury/KKF do faktury projekt FERS P4S.docx",
+      "../assets/templates/faktury/KKF do faktury projekt FERS PrzedmiotyŚcisłe.docx": "assets/templates/faktury/KKF do faktury projekt FERS PrzedmiotyŚcisłe.docx",
+      "../assets/templates/faktury/KKF do faktury projekt FERS RozZPE.docx": "assets/templates/faktury/KKF do faktury projekt FERS RozZPE.docx",
+      "../assets/templates/faktury/KKF do faktury projekt FERS UczeńZdolny.docx": "assets/templates/faktury/KKF do faktury projekt FERS UczeńZdolny.docx",
+      "../assets/templates/faktury/KKF do faktury projekt FERS ZRK3.docx": "assets/templates/faktury/KKF do faktury projekt FERS ZRK3.docx",
+      "../assets/templates/faktury/KKF do faktury projekt FERS ZSK7.docx": "assets/templates/faktury/KKF do faktury projekt FERS ZSK7.docx",
+      "../assets/templates/faktury/KKF do faktury projekt ICCS2027.docx": "assets/templates/faktury/KKF do faktury projekt ICCS2027.docx",
+      "../assets/templates/faktury/KKF do faktury projekt INTEGRED.docx": "assets/templates/faktury/KKF do faktury projekt INTEGRED.docx",
+      "../assets/templates/faktury/KKF do faktury projekt MOWE.docx": "assets/templates/faktury/KKF do faktury projekt MOWE.docx",
+      "../assets/templates/faktury/KKF do faktury projekt OECDps.docx": "assets/templates/faktury/KKF do faktury projekt OECDps.docx",
+      "../assets/templates/faktury/KKF do faktury projekt PISA2025.docx": "assets/templates/faktury/KKF do faktury projekt PISA2025.docx",
+      "../assets/templates/faktury/KKF do faktury projekt PrzyjaznaSzkoła.docx": "assets/templates/faktury/KKF do faktury projekt PrzyjaznaSzkoła.docx",
+      "../assets/templates/faktury/KKF do faktury projekt ReferNet2026.docx": "assets/templates/faktury/KKF do faktury projekt ReferNet2026.docx",
+      "../assets/templates/faktury/KKF do faktury projekt Tranzycja.docx": "assets/templates/faktury/KKF do faktury projekt Tranzycja.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt FERS 5PRK.docx": "assets/templates/rachunki/KKF do rachunku projekt FERS 5PRK.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt FERS BM.docx": "assets/templates/rachunki/KKF do rachunku projekt FERS BM.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt FERS CWD.docx": "assets/templates/rachunki/KKF do rachunku projekt FERS CWD.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt FERS E-dostęp.docx": "assets/templates/rachunki/KKF do rachunku projekt FERS E-dostęp.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt FERS EDUW.docx": "assets/templates/rachunki/KKF do rachunku projekt FERS EDUW.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt FERS LOSY3.docx": "assets/templates/rachunki/KKF do rachunku projekt FERS LOSY3.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt FERS Mikro.docx": "assets/templates/rachunki/KKF do rachunku projekt FERS Mikro.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt FERS Nauczyciele2.docx": "assets/templates/rachunki/KKF do rachunku projekt FERS Nauczyciele2.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt FERS P4S.docx": "assets/templates/rachunki/KKF do rachunku projekt FERS P4S.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt FERS PrzedmiotyŚcisłe.docx": "assets/templates/rachunki/KKF do rachunku projekt FERS PrzedmiotyŚcisłe.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt FERS RozZPE.docx": "assets/templates/rachunki/KKF do rachunku projekt FERS RozZPE.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt FERS UczeńZdolny.docx": "assets/templates/rachunki/KKF do rachunku projekt FERS UczeńZdolny.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt FERS ZRK3.docx": "assets/templates/rachunki/KKF do rachunku projekt FERS ZRK3.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt FERS ZSK7.docx": "assets/templates/rachunki/KKF do rachunku projekt FERS ZSK7.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt ICCS2027.docx": "assets/templates/rachunki/KKF do rachunku projekt ICCS2027.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt INTEGRED.docx": "assets/templates/rachunki/KKF do rachunku projekt INTEGRED.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt MOWE.docx": "assets/templates/rachunki/KKF do rachunku projekt MOWE.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt OECDps.docx": "assets/templates/rachunki/KKF do rachunku projekt OECDps.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt PISA2025.docx": "assets/templates/rachunki/KKF do rachunku projekt PISA2025.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt PrzyjaznaSzkoła.docx": "assets/templates/rachunki/KKF do rachunku projekt PrzyjaznaSzkoła.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt ReferNet2026.docx": "assets/templates/rachunki/KKF do rachunku projekt ReferNet2026.docx",
+      "../assets/templates/rachunki/KKF do rachunku projekt Tranzycja.docx": "assets/templates/rachunki/KKF do rachunku projekt Tranzycja.docx"
+    }
+  }
+}
